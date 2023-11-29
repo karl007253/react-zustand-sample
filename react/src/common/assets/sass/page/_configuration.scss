@@ -1,0 +1,21 @@
+#configuration-tab {
+
+    .configuration-tab-buttons {
+        box-shadow: -3px 3px 10px #00000029;
+
+        .active::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 10px;
+            background: $white;
+        }
+    }
+
+    .configuration-tab-content {
+        box-shadow: 3px 3px 10px #00000029;
+    }
+
+}

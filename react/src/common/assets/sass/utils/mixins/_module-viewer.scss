@@ -1,0 +1,35 @@
+@mixin rctree-icon-changer(
+    $width-open, 
+    $height-open, 
+    $background-image-open,
+    $width-close, 
+    $height-close, 
+    $background-image-close,
+    $width-document, 
+    $height-document, 
+    $background-image-document
+) {
+    // replacing expanded parent node icon
+    .rc-tree-icon__open {
+        @extend %module-tree-icon;
+        background-image: $background-image-open !important;
+        width: $width-open !important;
+        height: $height-open !important;
+    }
+
+    // replacing closed parent node icon
+    .rc-tree-icon__close {
+        @extend %module-tree-icon;
+        background-image: $background-image-close !important;
+        width: $width-close !important;
+        height: $height-close !important;
+    }
+
+    // replacing leaf node icon
+    .rc-tree-icon__docu {
+        @extend %module-tree-icon;
+        background-image: $background-image-document !important;
+        width: $width-document !important;
+        height: $height-document !important;
+    }
+}

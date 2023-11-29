@@ -1,0 +1,166 @@
+.btn-emobiq-brand {
+    @include button-variant(
+        $background: $emobiq-brand,
+        $border: $emobiq-brand,
+        $color: $white,
+        $hover-background: $white,
+        $hover-border: $emobiq-brand,
+        $hover-color: $emobiq-brand,
+        $active-background: $emobiq-brand,
+        $active-border: $emobiq-brand,
+        $active-color: $white,
+        $disabled-background: opacify($emobiq-brand, 0.5),
+        $disabled-color: $white
+    );
+    box-shadow: none !important;
+}
+
+.btn-emobiq-brand-outline-mahogany {
+    @include button-variant(
+        $background: $emobiq-brand,
+        $border: $mahogany,
+        $color: $white,
+        $hover-background: $mahogany,
+        $hover-border: $mahogany,
+        $hover-color: $white,
+        $active-background: $emobiq-brand,
+        $active-border: $mahogany,
+        $active-color: $white,
+        $disabled-background: rgba($mahogany, 0.5),
+        $disabled-border: rgba($mahogany, 0.5),
+        $disabled-color: $white
+    );
+    box-shadow: none !important;
+}
+
+.btn-outline-emobiq-brand {
+    @include button-outline-variant(
+        $color: $emobiq-brand,
+        $color-hover: $white
+    );
+    --#{$prefix}btn-active-color: #{$emobiq-brand};
+    --#{$prefix}btn-active-bg: #{$white};
+    --#{$prefix}btn-active-border-color: #{$emobiq-brand};
+    box-shadow: none !important;
+}
+
+.btn-outline-emobiq-brand-shaded {
+    @extend .btn-outline-emobiq-brand;
+    --#{$prefix}btn-bg: #{$emobiq-brand-light};
+}
+
+.btn-outline-light-emobiq-brand {
+    @include button-outline-variant(
+        $color: $emobiq-brand-light,
+        $color-hover: $white,
+        $active-background: $emobiq-brand,
+        $active-border: $emobiq-brand,
+    );
+    --#{$prefix}btn-color: #{$emobiq-brand};
+    --#{$prefix}btn-active-color: #{$emobiq-brand};
+    --#{$prefix}btn-active-bg: #{$white};
+    --#{$prefix}btn-active-border-color: #{$emobiq-brand-light};
+    --#{$prefix}btn-disabled-color: #{$vivid-tangerine};
+    --#{$prefix}btn-disabled-border-color: #{$anti-flash-white};
+    box-shadow: none !important;
+}
+
+.btn-outline-chinese-silver-philippine-gray {
+    @include button-outline-variant(
+        $color: $chinese-silver,
+        $color-hover: $white,
+    );
+    --#{$prefix}btn-color: #{$philippine-gray};
+    --#{$prefix}btn-active-color: #{$chinese-silver};
+    --#{$prefix}btn-active-bg: #{$white};
+    --#{$prefix}btn-active-border-color: #{$chinese-silver};
+    box-shadow: none !important;
+}
+
+.btn-text-white {
+    @include button-outline-variant(
+        $color: $white,
+        $color-hover: $white,
+        $active-background: transparent,
+        $active-border: transparent,
+        $active-color: $white
+    );
+    --#{$prefix}btn-border-color: transparent;
+    --#{$prefix}btn-disabled-border-color: transparent;
+
+    padding: 0;
+    box-shadow: none !important;
+}
+
+.btn-outline-chinese-silver {
+    @include button-outline-variant(
+        $color: $chinese-silver,
+        $color-hover: $white,
+    );
+    --#{$prefix}btn-color: #{$light-silver};
+    --#{$prefix}btn-active-color: #{$light-silver};
+    --#{$prefix}btn-active-bg: #{$white};
+    --#{$prefix}btn-active-border-color: #{$chinese-silver};
+    box-shadow: none !important;
+}
+
+.btn-philippine-gray-emobiq-brand {
+    @include button-outline-variant(
+        $color: $philippine-gray,
+        $color-hover: $emobiq-brand,
+        $active-background: $white,
+        $active-border: $white,
+    );
+    --#{$prefix}btn-active-color: #{$white};
+    --#{$prefix}btn-active-bg: #{$emobiq-brand};
+    --#{$prefix}btn-active-border-color: #{$emobiq-brand};
+    box-shadow: none !important;
+}
+
+.btn-dark-platinum-oslo-gray {
+    @include button-variant(
+        $background: $dark-platinum,
+        $border: $chinese-silver,
+        $color: $oslo-gray,
+        $hover-background: $oslo-gray,
+        $hover-border: $oslo-gray,
+        $hover-color: $white,
+        $active-background: $oslo-gray,
+        $active-border: $oslo-gray,
+        $active-color: $white
+    );
+    --#{$prefix}btn-focus-shadow-rgb: #{to-rgb($oslo-gray)};
+
+    // Ensure no dropdown icon is shown in bootstrap form.select
+    &::after {
+        content: none;
+    }
+}
+
+.btn-config{
+    --#{$prefix}btn-active-color: #{$white};
+    --#{$prefix}btn-active-bg: #{$emobiq-brand};
+    --#{$prefix}btn-active-border-color: #{$emobiq-brand};
+    box-shadow: none !important;
+}
+
+.btn-chinese-silver {
+    @include button-outline-variant(
+        $color: $dark-silver,
+        $color-hover: $dark-silver,
+        $active-background: $chinese-silver,
+        $active-border: $chinese-silver,
+    );
+    --#{$prefix}btn-color: #{$dark-silver};
+    --#{$prefix}btn-bg: #{$chinese-silver};
+    --#{$prefix}btn-border-color: #{$chinese-silver};
+    --#{$prefix}btn-active-color: #{$dark-silver};
+    --#{$prefix}btn-active-bg: #{$chinese-silver};
+    --#{$prefix}btn-active-border-color: #{$chinese-silver};
+
+    &:focus {
+        box-shadow: $roman-silver 0px 0px 0px 0.2rem;
+    }
+   
+    box-shadow: none;
+}

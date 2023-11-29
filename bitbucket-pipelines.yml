@@ -1,0 +1,13 @@
+# Workflow Configurations
+clone:
+  enabled: false
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: Deploy To Dev Server
+          deployment: dev
+          trigger: automatic
+          script:
+            - ssh $SSH "cd /home/eMOBIQ/web/emobiq/dev/emobiq-server-frontend; git pull origin dev; cd react; npm install --no-save --legacy-peer-deps; npm run build;"

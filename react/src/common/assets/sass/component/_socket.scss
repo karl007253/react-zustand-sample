@@ -1,0 +1,58 @@
+.socket {
+    &.normal,
+    &.default,
+    &.success,
+    &.error,
+    &.failed {
+        float: right;
+        height: 30px;
+        font-size: 12px;
+        line-height: 28px;
+        padding:0px 50px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position:  10px 0px;
+        font-weight: 700;
+
+        a {
+            position: absolute;
+            top:0px;
+            right:8px;    
+        }
+    }
+
+    &.default {
+        background-color: $emobiq-brand-light;
+        border: $deep-peach solid 1px;
+        color: $international-orange-aerospace;
+        background-image: url('../../images/icons/default.svg');
+
+        a {
+            color: $international-orange-aerospace;
+        }
+    }
+
+    &.normal,
+    &.success {
+        background-color: $tea-green; 
+        border: $tea-green solid 1px; 
+        color: $car-polo-pomona-green;
+        background-image: url('../../images/icons/success.svg');
+
+        a {
+            color: $car-polo-pomona-green;            
+        }
+    }
+
+    &.error,
+    &.failed {
+        background-color: $pale-pink; 
+        border: $orchid-pink solid 1px; 
+        color: $persian-plum;
+        background-image: url('../../images/icons/failed.svg'); 
+        
+        a {
+            color: $persian-plum;
+        }
+    }
+}

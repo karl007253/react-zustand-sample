@@ -1,0 +1,12 @@
+$font-styles: (
+    "normal": normal,
+    "italic": italic,
+    "oblique": oblique
+);
+
+// class for font style
+@each $style, $type in $font-styles {
+    .text-#{$style} {
+        font-style: $type;
+    }
+}

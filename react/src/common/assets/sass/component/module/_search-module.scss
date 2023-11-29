@@ -1,0 +1,25 @@
+/* Search Component */
+
+.module-search {
+    padding: 10px;
+    position: relative;
+
+    .module-search-input {
+        height: 30px !important;
+        font-size: 14px;
+        padding-right: 30px;
+    }
+
+    .module-search-icon {
+        position: absolute;
+        top: 16px;
+        right: 18px;
+        color: $light-gray;
+    }
+}
+
+.module-list {
+    min-height: 700px;
+    box-sizing: border-box;
+    overflow: auto;
+}

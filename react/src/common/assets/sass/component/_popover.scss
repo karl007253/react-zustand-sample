@@ -1,0 +1,64 @@
+.popover {
+  --#{$prefix}popover-body-padding-x: 32px;
+  --#{$prefix}popover-body-padding-y: 20px;
+  --#{$prefix}popover-box-shadow: 6px 6px 6px rgba(0, 0, 0, .16); // #29000000
+
+  /* Remove default popover border settings */
+  --#{$prefix}popover-border-width: 0;
+  --#{$prefix}popover-border-radius: 0;
+
+  /* For some reason Bootstrap popover component have this variable declared
+     but not applied. We will apply it right now */
+  box-shadow: var(--#{$prefix}popover-box-shadow);
+
+  .button-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+#config-delete-top {
+    inset: auto auto 0px -68px !important;
+    width: 239px;
+    height: 153px;
+    background:$white 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 6px $gainsboro;
+    opacity: 1;
+    border: 0px;
+    &.popover {
+        .popover-arrow {
+            left: 68px !important;
+        }
+    }
+}
+
+#api-config-delete-top {
+  inset: auto auto 0px -68px !important;
+  width: 239px;
+  height: 153px;
+  border: 0px;
+  &.popover {
+      .popover-arrow {
+        left: 68px !important;
+        top: 152px;
+      }
+      .button-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+      }
+      --bs-popover-body-padding-x: 20px;
+      --bs-popover-body-padding-y: 32px;
+      --#{$prefix}popover-box-shadow: 6px 6px 6px rgba(0, 0, 0, .16); // #29000000
+
+      /* Remove default popover border settings */
+      --#{$prefix}popover-border-radius: 0;
+
+      /* For some reason Bootstrap popover component have this variable declared
+        but not applied. We will apply it right now */
+      box-shadow: var(--#{$prefix}popover-box-shadow);
+  }
+}

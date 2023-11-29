@@ -1,0 +1,133 @@
+@mixin vbox-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+.dashboard-title {
+    color: $emobiq-brand;
+}
+
+.dashboard-card-title {
+    color: $light-silver;
+}
+
+.chart {
+    height: 424px;
+}
+
+.summary {
+    border: solid $light-gray 0.5px;
+    border-radius: 5px;
+    background-image: linear-gradient($white, $anti-flash-white);
+    margin: 0px;
+    height: 85px;
+    color: $philippine-gray;
+
+    .image {
+        height: 60px;
+        width: 70px;
+        overflow: hidden;
+        position: relative;
+
+        > img {
+            top: 0;
+            position: absolute;
+
+            &:first-child {
+                opacity: 1;
+            }
+
+            &:last-child {
+                opacity: 0;
+            }
+        }
+    }
+
+    .title {
+        padding-top: 10px;
+        margin-bottom: 5px;
+        color: $light-silver;
+    }
+
+    .total {
+        min-width: 85px;
+        min-height: 63px;
+        border-radius: 5px;
+        background-color: $white;
+        @include vbox-shadow(10px 11px 11px -13px rgb(0 0 0 / 30%) inset);
+
+        .value {
+            margin: 5px 0px 0px !important;
+            color: $light-silver;
+            font-size: 30px;
+        }
+    }
+
+    &:hover {
+        background-image: linear-gradient($white, $gainsboro);
+        @include vbox-shadow(4px 7px 11px -4px rgba(0, 0, 0, 0.25));
+        cursor: pointer;
+
+        .title {
+            color: $emobiq-brand;
+        }
+
+        .total {
+            .value {
+                color: $emobiq-brand;
+            }
+        }
+
+        .image {
+            > img {
+                &:first-child {
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: map-get($container-max-widths, "md")) {
+        margin-bottom: 10px;
+
+        .image {
+            > img {
+                height: 90px;
+            }
+        }
+    }
+}
+
+.storage {
+    border: solid $light-gray 0.5px;
+    border-radius: 5px;
+    margin: 0px;
+    height: 72px;
+
+    .label {
+        color: $emobiq-brand;
+    }
+
+    .value {
+        color: $light-silver;
+    }
+
+    @media screen and (max-width: map-get($container-max-widths, "md")) {
+        margin-bottom: 10px;
+    }
+}
+
+.breadcrumb-row {
+    min-height: 49px;
+}
+
+.chart-container {
+    height: 424px;
+    @media screen and (max-width: map-get($container-max-widths, "xs")) {
+        height: 700px;
+    }
+}

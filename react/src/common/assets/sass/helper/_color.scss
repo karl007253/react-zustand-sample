@@ -1,0 +1,76 @@
+$colors: (
+  "emobiq-brand": $emobiq-brand,
+  "granite-gray": $granite-gray,
+  "philippine-gray": $philippine-gray,
+  "bright-gray": $bright-gray,
+  "spanish-gray": $spanish-gray,
+  "cultured": $cultured,
+  "light-gray": $light-gray,
+  "dark-gray": $dark-gray,
+  "platinum": $platinum,
+  "philippine-silver": $philippine-silver,
+  "chinese-silver": $chinese-silver,
+  "quartz": $quartz,
+  "dark-platinum": $dark-platinum,
+  "tart-orange": $tart-orange,
+  "argent": $argent,
+  "anti-flash-white": $anti-flash-white,
+  "davy-gray": $davy-gray
+);
+
+// class for a coloured text
+@each $color, $value in $colors {
+  .text-#{$color} {
+    color: $value;
+  }
+
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+
+  .border-#{$color} {
+    border: var(--#{$prefix}border-width, 1px) solid $value;
+  }
+
+  .border-color-#{$color} {
+    border-color: $value !important;
+  }
+
+  .border-end-#{$color} {
+    border-right: var(--#{$prefix}border-width, 1px) solid $value;
+  }
+
+    .bg-#{$color} {
+        background-color: $value;
+    }
+
+    .border-#{$color} {
+        border: var(--#{$prefix}border-width, 1px) solid $value;
+    }
+
+    .border-end-#{$color} {
+        border-right: var(--#{$prefix}border-width, 1px) solid $value;
+    }
+
+    .input-placeholder-#{$color} {
+        // Chrome, Firefox, Opera, Safari 10.1+
+        &::placeholder {
+            color: $value;
+
+            // Firefox
+            opacity: 1;
+        }
+
+        // Internet Explorer 10-11
+        &:-ms-input-placeholder {
+            color: $value;
+            font-style: italic;
+        }
+
+        // Microsoft Edge
+        &::-ms-input-placeholder {
+            color: $value;
+            font-style: italic;
+        }
+    }
+}

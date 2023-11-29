@@ -1,0 +1,98 @@
+{
+    "name": "emobiq-server-frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@dnd-kit/core": "^6.0.8",
+        "@dnd-kit/sortable": "^7.0.2",
+        "@dnd-kit/utilities": "^3.2.1",
+        "@fortawesome/fontawesome-svg-core": "^1.2.36",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
+        "@fortawesome/react-fontawesome": "^0.1.14",
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^13.3.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.5.2",
+        "@types/lodash": "^4.14.186",
+        "@types/node": "^16.11.43",
+        "@types/react": "^18.0.15",
+        "@types/react-dom": "^18.0.6",
+        "@types/react-fontawesome": "^1.6.5",
+        "axios": "^0.27.2",
+        "bootstrap": "^5.2.0",
+        "bootstrap-switch-button-react": "^1.2.0",
+        "chart.js": "^4.2.1",
+        "formik": "^2.2.9",
+        "i18next": "^21.8.13",
+        "i18next-http-backend": "^1.4.1",
+        "immer": "^9.0.15",
+        "moment": "^2.29.4",
+        "nanoid": "^3.3.4",
+        "raphael": "^2.3.0",
+        "rc-tree": "^5.7.0",
+        "react": "^18.2.0",
+        "react-bootstrap": "^2.5.0",
+        "react-chartjs-2": "^5.2.0",
+        "react-dom": "^18.2.0",
+        "react-i18next": "^11.18.0",
+        "react-router-dom": "^6.3.0",
+        "react-scripts": "5.0.1",
+        "react-toastify": "^9.0.7",
+        "react-window": "^1.8.9",
+        "sass": "^1.53.0",
+        "typescript": "^4.7.4",
+        "web-vitals": "^2.1.4",
+        "yup": "^0.32.11",
+        "zustand": "^4.0.0-rc.1"
+    },
+    "devDependencies": {
+        "@types/raphael": "^2.3.3",
+        "@types/react-window": "^1.8.5",
+        "@typescript-eslint/eslint-plugin": "^5.30.5",
+        "@typescript-eslint/parser": "^5.30.5",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.19.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-import-resolver-typescript": "^3.2.4",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsx-a11y": "^6.6.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.30.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "husky": "^8.0.1",
+        "jest-websocket-mock": "^2.4.0",
+        "lint-staged": "^13.0.3",
+        "prettier": "^2.7.1"
+    },
+    "scripts": {
+        "start": "cross-env DISABLE_ESLINT_PLUGIN=true react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "prepare": "cd ../ && husky install ./react/.husky"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "lint-staged": {
+        "*.{ts,tsx}": "eslint --fix"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

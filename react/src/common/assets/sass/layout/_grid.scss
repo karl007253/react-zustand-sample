@@ -1,0 +1,304 @@
+// Padding
+
+.p-10 {
+    padding: 10px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-16 {
+    padding-top: 16px;
+}
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+.pt-18 {
+    padding-top: 18px;
+}
+
+.pt-43 {
+    padding-top: 43px;
+}
+
+.pb-17 {
+    padding-bottom: 17px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-35 {
+    padding-bottom: 35px;
+}
+
+.px-6 {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.px-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.px-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.px-50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.py-6 {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-21 {
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.py-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-35 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+// Margin
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-45 {
+    margin-top: 45px;
+}
+
+// Add "-px" suffix to avoid conflict with boostrap, which is having a css class, ".mt-2"
+.mt-2-px {
+    margin-top: 2px;
+}
+
+.mt-n50 {
+    margin-top: -50px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.ms-7 {
+    margin-left: 7px;
+}
+
+.ms-12 {
+    margin-left: 12px;
+}
+
+.me-12 {
+    margin-right: 12px;
+}
+
+// Width
+.mw-500 {
+    max-width: 500px;
+}
+
+.mw-125 {
+    max-width: 125px;
+}
+
+.w-60 {
+    width: 60px;
+}
+
+.w-180 {
+    width: 180px;
+}
+
+.w-620 {
+    width: 620px;
+}
+
+.w-0 {
+    width: 0;
+}
+
+.wp-15 {
+    width: 15%;
+}
+
+.mw-55 {
+    max-width: 55px;
+}
+
+.mw-100-300 {
+    max-width: calc(100% - 300px);
+}
+
+.w-300 {
+    width: 300px;
+}
+
+.w-120 {
+    width: 120px;
+}
+
+.w-0 {
+    width: 0;
+}
+
+// Height
+.mh-370 {
+    max-height: 370px;
+}
+
+.mh-100vh-100px {
+    max-height: calc(100vh - 100px);
+}
+
+.mh-100vh-200px {
+    max-height: calc(100vh - 200px);
+}
+
+.h-100-40px {
+    height: calc(100% - 40px);
+}
+
+.h-90 {
+    height: 90%;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.h-525 {
+    height: 525px;
+}
+
+.h-400 {
+    height: 400px;
+}
+
+.h-320 {
+    height: 320px;
+}
+
+.h-350 {
+    height: 350px;
+}
+
+.h-250 {
+    height: 250px;
+}
+
+.h-180 {
+    height: 180px;
+}
+
+.h-105 {
+    height: 105px !important;
+}
+
+// Height
+.min-h-400 {
+    min-height: 400px;
+}
+
+.min-h-400 {
+    min-height: 400px;
+}
+
+.h-36 {
+    height: 36px;
+}
+
+.h-35 {
+    height: 35px;
+}
+
+.h-30 {
+    height: 30px;
+}
+
+@media screen and (min-width: map-get($container-max-widths, "md")) {
+    .mw-md-200 {
+        max-width: 200px;
+    }
+}
+
+// Border Radius
+.rounded-top-start-0 {
+    border-top-left-radius: 0 !important;
+}
+
+.rounded-top-end-0 {
+    border-top-right-radius: 0 !important;
+}
+
+.rounded-bottom-end-0 {
+    border-bottom-right-radius: 0 !important;
+}
+
+.rounded-end-0 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+// Add "-px" suffix to avoid conflict with bootstrap, which is having a css class, ".rounded-3"
+.rounded-3-px {
+    border-radius: 3px;
+}
+
+.rounded-6 {
+    border-radius: 6px;
+}
+
+// Position
+.bottom-1-rem {
+    bottom: 1rem;
+}
+
+.right-1-rem {
+    right: 1rem;
+}
+
+// Z-index overrides (i.e. position of elements in a stack)
+.z-index-1 {
+    z-index: 1;
+}

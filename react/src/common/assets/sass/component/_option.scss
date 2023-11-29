@@ -1,0 +1,30 @@
+#main-content {
+    .settings {
+        padding: 0px 20px;
+        .label{
+            padding: 0px 10px;
+        }
+        .switchtoggle{
+            border-radius: 5px;
+            width: 89px;
+            height: 25px;
+            min-height: 25px;
+            .switch-on{
+                background-color: $emobiq-brand;
+                border: none;
+                border-right: 1px solid $platinum;
+                padding-top: 1px;
+            }
+            .switch-off{
+                background-color: $platinum;
+                border: none;
+                border-left: 1px solid $platinum;
+                padding-top: 1px;
+            }
+            .switch-handle{
+                background-color: $white;
+                border: 0.5px solid $platinum;
+            }
+        }
+    }
+}

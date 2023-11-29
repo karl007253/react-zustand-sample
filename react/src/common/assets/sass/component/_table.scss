@@ -1,0 +1,157 @@
+.table-width-api-parameters {
+    // Ensure the default width is 100%
+    width: 100%;
+
+    // Set the width of each column. Always make sure the total width of the column is equal to 100%
+    th {
+        &:nth-child(1) {
+            width: 25%;
+        }
+
+        &:nth-child(2) {
+            width: 25%;
+        }
+
+        &:nth-child(3) {
+            width: 25%;
+        }
+
+        &:nth-child(4) {
+            width: 10%;
+        }
+
+        &:nth-child(5) {
+            width: 15%;
+        }
+    }
+
+    // Ensure all the columns are displayed properly in smaller screen
+    @media screen and (max-width: map-get($container-max-widths, "md")) {
+        width: 175%;
+    }
+
+    @media screen and (max-width: map-get($container-max-widths, "sm")) {
+        width: 330%;
+    }
+}
+
+.table-width-database-content {
+    // Ensure the default width is 100%
+    width: 100%;
+
+    th {
+        min-width: 75px;
+        max-width: 150px;
+    }
+
+    // Ensure all the columns are displayed properly in smaller screen
+    @media screen and (max-width: map-get($container-max-widths, "md")) {
+        width: 175%;
+    }
+
+    @media screen and (max-width: map-get($container-max-widths, "sm")) {
+        width: 330%;
+    }
+}
+
+.table-width-api-result-json {
+  // Ensure the default width is 100%
+  width: 100%;
+
+  th {
+    &:nth-child(1){
+      width: 25%;
+    }
+
+    &:nth-child(2){
+      width: 25%;
+    }
+
+    &:nth-child(3){
+      width: 25%;
+    }
+
+    &:nth-child(4){
+      width: 25%;
+    }
+  }
+
+  // Ensure all the columns are displayed properly in smaller screen
+  @media screen and (max-width: map-get($container-max-widths, "md")) {
+    width: 175%;
+  }
+
+  @media screen and (max-width: map-get($container-max-widths, "sm")) {
+    width: 330%;
+  }
+}
+
+.table-width-api-result-text {
+  // Ensure the default width is 40%
+  width: 40%;
+
+  th {
+    &:nth-child(1){
+      width: 15%;
+    }
+
+    &:nth-child(2){
+      width: 25%;
+    }
+  }
+
+  // Ensure all the columns are displayed properly in smaller screen
+  @media screen and (max-width: map-get($container-max-widths, "lg")) {
+    width: 80%;
+  }
+}
+
+
+
+.api-authentication-information-table {
+  .table-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $granite-gray;
+  }
+
+  table {
+    width: 100%;
+
+    letter-spacing: 1.05px;
+    font-size: 14px;
+    line-height: 16.8px;
+    border-collapse: separate;
+    border-spacing: 0 7px;
+
+    // React translation hooks recognize \n as newline, though not converting it to proper HTML breaks.
+    // Therefore, we enforce the newline detection here
+    white-space: pre-line;
+
+    th {
+      text-transform: uppercase;
+      color: $ceil;
+      letter-spacing: 1.05px;
+      padding: 12px;
+    }
+
+    $border-width: 0.25px;
+
+    td {
+      color: $granite-gray;
+      padding: 12px;
+      border-style: solid;
+      border-color: $chinese-silver;
+      border-top-width: $border-width;
+      border-bottom-width: $border-width;
+
+      &:first-child{
+        border-left-width: $border-width;
+      }
+      &:last-child{
+        border-right-width: $border-width;
+      }
+    }
+
+  }
+}

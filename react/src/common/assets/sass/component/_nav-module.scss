@@ -1,0 +1,107 @@
+$module-border-radius: 10px;
+$module-icon-width: 50px;
+$module-icon-height: 50px;
+
+.module-nav-col {
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.module-container {
+    z-index: 2;
+    width: 63px;
+    height: fit-content;
+    border: 0.5px solid $platinum;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.app-icon {
+
+    display: flex;
+    width: $module-icon-width;
+    flex-direction: column;
+    margin: 0;
+
+    .app-icon-title {
+        color: $philippine-gray;
+        font-size: 10px;
+        line-height: 11px;
+        padding: 0;
+        margin: 6px 0 6px 0;
+    }
+
+    .app-icon-fig {
+        height: $module-icon-height;
+        border-radius: $module-border-radius;
+
+        > img {
+            width: $module-icon-width;
+            height: $module-icon-height;
+            border-radius: $module-border-radius;
+        }
+
+        &:hover .app-icon-figcaption {
+            height: 30px;
+            cursor: pointer;
+            pointer-events: none;
+            opacity: 0.8;
+        }
+
+        .app-icon-figcaption {
+            background-image: url("../../images/bgcaption.png");
+            background-repeat: no-repeat;
+            width: $module-icon-width;
+            border-radius: 0 0 $module-border-radius $module-border-radius;
+            height: 0;
+            transition: 0.5s ease;
+            overflow: hidden;
+            opacity: 0;
+
+            .camera-icon {
+                color: $white;
+                font-size: 16px;
+                left: 17.5px;
+                top: 5px;
+                z-index: 10;
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+.icon-holder {
+    .module-icon {
+        &:last-child {
+            opacity: 0;
+        }
+    }
+
+    &:hover {
+        .module-icon {
+            cursor: pointer;
+
+            &:first-child {
+                opacity: 0;
+            }
+
+            &:last-child {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.module-icon-bridge {
+    top: 5px;
+    width: 13px;
+    height: 60px;
+    position: absolute;
+    z-index: 999;
+    left: 61px;
+    background-color: $white;
+    border-top: 0.5px solid $platinum;
+    border-bottom: 0.5px solid $platinum;
+}

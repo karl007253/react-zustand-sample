@@ -1,0 +1,19 @@
+$font-sizes: (
+    "xxs": 8px,
+    "xs": 10px,
+    "sm": 12px,
+    "rg": 14px,
+    "md": 16px,
+    "lg": 18px,
+    "xl": 20px,
+    "xxl": 22px,
+    "xxxl": 24px,
+    "h1": 32px,
+);
+
+// class for font size
+@each $size, $amount in $font-sizes {
+    .text-#{$size} {
+        font-size: $amount;
+    }
+}

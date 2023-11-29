@@ -1,0 +1,115 @@
+$enable-negative-margins: true;
+
+// override bootstrap radius
+$border-radius-sm: 3px !important;
+$border-radius: 5px !important;
+$border-radius-lg: 10px;
+
+// global styling for modal
+$modal-md: 537px;
+$modal-content-border-color: $dark-silver;
+$modal-header-border-color: $chinese-silver;
+$modal-footer-border-color: $chinese-silver;
+$modal-backdrop-bg: black;
+$modal-backdrop-opacity: 0.8;
+
+$container-max-widths: (
+    xs: 540px,
+    sm: 720px,
+    md: 960px,
+    lg: 1140px,
+);
+
+$border-widths: (
+    half: 0.5px,
+    1: 1px,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px
+);
+
+// global font color
+$body-color: $dark-gray;
+
+// global styling for a link
+$link-color: $dark-gray;
+$link-decoration: none;
+$link-hover-decoration: underline;
+$link-hover-color: $emobiq-brand;
+
+// global styling for a link button
+$btn-link-color: $emobiq-brand;
+$btn-link-hover-color: $emobiq-brand;
+
+// global styling for an input
+$input-color: $philippine-gray;
+$input-border-color: $chinese-silver;
+$input-border-radius: 3px;
+$input-placeholder-color: $chinese-silver;
+$input-focus-border-color: $chinese-silver;
+$input-focus-box-shadow: none;
+$input-padding-x: 17px;
+$input-padding-y: 0.5rem;
+$form-check-input-focus-box-shadow: none;
+$form-check-input-width: 1.2em;
+$form-check-input-checked-color: $emobiq-brand;
+$form-check-input-checked-bg-color: none;
+$form-select-focus-box-shadow: none;
+$form-select-indicator-color: $silver-foil;
+$form-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='#{$form-select-indicator-color}' d='M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z'/></svg>");
+
+// The default font type of eMOBIQ application is Arial
+$font-family-base: Arial, san-serif;
+
+// global styling for a card
+$card-border-radius: 5px;
+$card-border-color: $light-gray;
+
+// global styling for breadcrumb
+$breadcrumb-item-padding-x: 3px;
+$breadcrumb-margin-bottom: 0;
+
+// global styling for nav
+$nav-link-padding-x: 2rem;
+$nav-link-color: $spanish-gray;
+$nav-link-font-size: 14px;
+$nav-tabs-border-width: 2px;
+$nav-tabs-link-active-color: $emobiq-brand;
+$nav-tabs-link-hover-border-color: transparent;
+$nav-tabs-link-active-border-color: $bright-gray;
+$nav-pills-border-radius: 5px;
+
+// global styling for shadow
+$box-shadow: 3px 3px 5px rgba($black, 0.05);
+
+// global styling for list group
+$list-group-color: $spanish-gray;
+$list-group-bg: $floral-white;
+$list-group-border-color: $light-gray;
+$list-group-hover-bg: $floral-white;
+$list-group-active-color: $emobiq-brand;
+$list-group-active-bg: $white;
+$list-group-active-border-color: $light-gray;
+$list-group-action-hover-color: $spanish-gray;
+$list-group-action-active-color: $emobiq-brand;
+$list-group-action-active-bg: $white;
+
+// global styling for a dropdown
+$dropdown-border-color: $platinum;
+$dropdown-link-color: $dark-gray;
+$dropdown-link-hover-color: $dark-gray;
+$dropdown-link-active-color: $dark-gray;
+$dropdown-link-hover-bg: none;
+$dropdown-link-active-bg: none;
+
+// global styling for accordion
+$accordion-button-bg: $cultured;
+$accordion-button-color: $dark-silver;
+$accordion-button-focus-box-shadow: none;
+$accordion-button-active-bg: $cultured;
+$accordion-button-active-color: $dark-silver;
+$accordion-icon-width: $font-size;
+
+// Default Bootstrap configuration
+@import "~bootstrap/scss/bootstrap";

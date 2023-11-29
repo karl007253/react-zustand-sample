@@ -1,0 +1,84 @@
+.test-menu {
+    &.card {
+        background: $granite-gray;
+    }
+    .card-header {
+        border-bottom: 0px;
+    }
+    .card-body {
+        textarea {
+            &.form-control {
+                padding: 0px;
+                background: $granite-gray;
+                color: $white;
+                font-size: 12px;
+                border-color: $granite-gray;
+            }
+        }
+
+        .scheduler-accordion-body {
+            padding-left: 52px;
+        }
+    }
+    .nav-tabs {
+        background: $quartz;
+        --bs-nav-tabs-border-width: 0px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        .nav-item {
+            padding: 4px 0 0 7px;
+            .nav-link {
+                border-color: $quartz;
+                &.active {
+                    color: $white;
+                    background: $granite-gray;
+                    border-bottom-color: $granite-gray;
+                }
+            }
+        }
+    }
+}
+#edit-configuration-menu{
+    .card{
+        .card-body{
+            .tab-content{
+                .row{
+                    .col-lg-2,.col-md-3,.col-2{
+                        width: 22% !important; 
+                    }
+                    .col-lg-1,.col-md-9,.col-10{
+                        width: 78% !important;
+                        .tab-content{
+                            .tab-pane{
+                                .row > *{
+                                    padding-right: 1px !important;
+                                    padding-left: 1px !important;
+                                }
+                                .col-sm-2 {
+                                    width: 19% !important;
+                                }
+                                .col-sm-3 {
+                                    width: 24% !important;
+                                }
+                                .col-sm-4 {
+                                    width: 30% !important;
+                                }
+                                .form-select {
+                                    padding: 0.5rem 10px 0.5rem 10px;
+                                }
+                                .daysradio{
+                                    width: 17%;
+                                    float: left;
+                                }
+                            }
+                        }
+                    }
+
+                    .scheduler-tab-content {
+                        min-height: 256px;
+                    }
+                }
+            }
+        }
+    }
+}

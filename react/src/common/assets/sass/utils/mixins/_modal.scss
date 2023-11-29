@@ -1,0 +1,35 @@
+@mixin modal(
+    $header-background-color,
+    $title-color
+) {
+    .modal-content {
+        border: 0;
+    }
+
+    .modal-header {
+        background-color: $header-background-color;
+        padding: 13px 24px;
+
+        // doing this to remove unecessary spaces behind the header
+        border-top-left-radius: $modal-content-border-radius - 1;
+        border-top-right-radius: $modal-content-border-radius - 1;
+
+        .modal-title {
+            color: $title-color;
+            font-size: 18px;
+        }
+
+        .btn-close {
+            box-shadow: none !important;
+        }
+    }
+
+    .modal-body {
+        padding: 24px;
+    }
+
+    .modal-footer {
+        padding: 0 20px 24px;
+    }
+
+}

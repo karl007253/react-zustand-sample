@@ -1,0 +1,1078 @@
+{
+    "page": {
+        "title": {
+            "default": "eMOBIQ",
+            "not": {
+                "found": "Page Not Found"
+            },
+            "dashboard": "{{appName}} Dashboard",
+            "api": "{{appName}} API",
+            "database": "{{appName}} Database",
+            "scheduler": "{{appName}} Scheduler",
+            "service": "{{appName}} Service",
+            "configuration": "{{appName}} Configuration"
+        }
+    },
+    "not": {
+        "found": {
+            "page": {
+                "message": "Page not found!",
+                "description": "The page that you were looking for does not exists.",
+                "link": {
+                    "back": "Go back to the main page"
+                }
+            },
+            "session": {
+                "message": "Session not found or expired. Redirecting to login page..."
+            }
+        }
+    },
+    "common": {
+        "logo": {
+            "icon": {
+                "alt": "Emobiq Now Everyone Can Create An Apps"
+            }
+        },
+        "error": {
+            "application": {
+                "not": {
+                    "found": "App does not exist"
+                },
+                "storage": {
+                    "exceeded": "Storage limit exceeded",
+                    "error": "There is a problem fetching Storage"
+                }
+            },
+            "releaseAndBuild": {
+                "not": {
+                    "found": "Releases and Build Not Found"
+                }
+            },
+            "generic": "Something went wrong",
+            "specialCharactersDetected": "Cannot input special characters on this field. (except for '_' and '-')",
+            "specialCharactersDetectedSpecific": "Cannot input special characters on '{{field}}' field. (except for '_' and '-')",
+            "nameExist": "Name already exist",
+            "nameSpace": "Empty spaces are not allowed"
+        },
+        "success": {
+            "save": "Project saved successfully"
+        },
+        "button": {
+            "add": "Add",
+            "cancel": "Cancel",
+            "create": "Create",
+            "rename": "Rename",
+            "delete": "Delete",
+            "close": "Close",
+            "ok": "OK",
+            "copy": "Copy",
+            "paste": "Paste",
+            "update": "Update",
+            "yes": "Yes",
+            "no": "No",
+            "configuration": "Configuration"
+        },
+        "text": {
+            "search": "Search"
+        }
+    },
+    "header": {
+        "button": {
+            "save": "Save",
+            "build": "Build",
+            "help": "Help",
+            "download": "Download"
+        },
+        "version": {
+            "label": "Ver. {{version}}"
+        },
+        "nav": {
+            "button": {
+                "dashboard": "Dashboard",
+                "module": "Module",
+                "configuration": "Configuration",
+                "service": "Service"
+            }
+        },
+        "text": {
+            "versionExample": "major.minor.patch e.g. 1.0.0",
+            "buildVersionDesc": "build - increase the build version"
+        }
+    },
+    "dashboard": {
+        "main": {
+            "title": "Dashboard"
+        },
+        "title": {
+            "releaseAndBuild": "Releases And Build",
+            "storage": "Storage"
+        },
+        "summary": {
+            "title": {
+                "api": "API",
+                "database": "Database",
+                "scheduler": "Scheduler"
+            },
+            "openRecent": "Open Recent:",
+            "total": "Total"
+        },
+        "storage": {
+            "current": "Current Storage",
+            "used": "Used Storage",
+            "remaining": "Remaining Storage"
+        },
+        "modal": {
+            "download": {
+                "title": "Download",
+                "form": {
+                    "label": {
+                        "mode": "Mode"
+                    },
+                    "placeholder": {
+                        "mode": "Select a mode to download"
+                    },
+                    "button": {
+                        "download": "Download"
+                    }
+                }
+            }
+        }
+    },
+    "module": {
+        "search": {
+            "placeholder": "Search"
+        },
+        "logo": {
+            "icon": {
+                "alt": "Icon"
+            },
+            "title": "Back-end Icon"
+        },
+        "icon": {
+            "api": {
+                "alt": "Api"
+            },
+            "database": {
+                "alt": "Database"
+            },
+            "scheduler": {
+                "alt": "Scheduler"
+            }
+        },
+        "error": {
+            "icon": {
+                "overFileSize": "Project icon size must be under 1MB",
+                "fileTypeNotSupported": "File type not supported.",
+                "noFileSelected": "No file selected. Please choose a file to upload."
+            }
+        }
+    },
+    "api": {
+        "dashboard": {
+            "header": {
+                "title": "API",
+                "label": {
+                    "path": "Path:",
+                    "authentication": "Authentication"
+                },
+                "dropdown": {
+                    "select": "Select",
+                    "edit": "Edit",
+                    "clear": "Clear"
+                }
+            },
+            "modal": {
+                "create": {
+                    "title": "Create Folder/Action",
+                    "form": {
+                        "label": {
+                            "type": "Type",
+                            "name": "Name"
+                        },
+                        "select": {
+                            "options": {
+                                "folder": "Folder",
+                                "action": "Action"
+                            }
+                        },
+                        "error": {
+                            "required": {
+                                "name": "Name is required"
+                            }
+                        },
+                        "message": {
+                            "success": {
+                                "action": "Successfully added an API",
+                                "folder": "Successfully added a folder"
+                            }
+                        }
+                    }
+                },
+                "rename": {
+                    "title": "Rename {{type}}",
+                    "form": {
+                        "label": {
+                            "type": "Type",
+                            "name": "Name"
+                        },
+                        "error": {
+                            "required": {
+                                "name": "Name is required"
+                            },
+                            "nameExist": "Name already exist in same directory",
+                            "nameSpace": "Empty spaces are not allowed"
+                        },
+                        "message": {
+                            "success": {
+                                "action": "Successfully renamed an API",
+                                "folder": "Successfully renamed a folder"
+                            }
+                        }
+                    }
+                },
+                "delete": {
+                    "title": "Delete {{type}}",
+                    "form": {
+                        "message": {
+                            "success": {
+                                "action": "Successfully deleted an API",
+                                "folder": "Successfully deleted a folder"
+                            },
+                            "confirm": "Are you sure you want to delete {{name}}"
+                        }
+                    }
+                },
+                "build": {
+                    "title": "Build",
+                    "form": {
+                        "label": {
+                            "mode": "Mode",
+                            "version": "Version",
+                            "warning": "(Don't close/refresh this window while processing)"
+                        },
+                        "placeholder": {
+                            "mode": "Select an option"
+                        },
+                        "button": {
+                            "build": "Building..",
+                            "start": "Start Build"
+                        },
+                        "message": {
+                            "start": "Starting build process..",
+                            "mode": "Starting build process..",
+                            "error": {
+                                "mode": "Please select a build mode",
+                                "version": "Please select a build version",
+                                "build": "There was an error while building the app. Please try again later."
+                            },
+                            "complete": "Build process completed",
+                            "building": "Building..."
+                        }
+                    }
+                }
+            },
+            "menu": {
+                "tabs": {
+                    "primary": {
+                        "get": "get",
+                        "patch": "patch",
+                        "put": "put",
+                        "post": "post",
+                        "delete": "delete"
+                    },
+                    "secondary": {
+                        "header": "header",
+                        "parameters": "parameters",
+                        "result": "result",
+                        "action": "action",
+                        "test": "test"
+                    }
+                }
+            },
+            "modalConfig": {
+                "title": "Authentication",
+                "form": {
+                    "input": {
+                        "search": "Search",
+                        "authType": "*Type",
+                        "name": "*Name",
+                        "dbConnection": "DB Connection",
+                        "tableReference": "Table Reference",
+                        "username": "Username (Field)",
+                        "password": "Password (Field)",
+                        "tableTokenReference": "Table Token Reference"
+                    },
+                    "placeholder": {
+                        "name": "Name",
+                        "search": "Search",
+                        "new": "New Configuration"
+                    },
+                    "button": {
+                        "create": "Create",
+                        "delete": "Delete",
+                        "update": "Update",
+                        "select": "Select",
+                        "selected": "Selected",
+                        "cancel": "Cancel"
+                    },
+                    "select": {
+                        "options": {
+                            "basicAuth": "Basic Auth",
+                            "oauth2": "OAuth2",
+                            "select": "Select"
+                        }
+                    },
+                    "error": {
+                        "required": {
+                            "authType": "Type field is Required.",
+                            "name": "Name field is Required.",
+                            "dbConnection": "DB Connection field is Required.",
+                            "tableReference": "Table Reference field is Required.",
+                            "username": "Username field is Required.",
+                            "password": "Password field is Required.",
+                            "tableTokenReference": "Table Token Reference field is Required."
+                        },
+                        "nameExist": "Name already exists"
+                    },
+                    "warning": {
+                        "delete": "Are you sure you want to delete this Authentication?"
+                    },
+                    "success": {
+                        "update": "Successfully updated Configuration",
+                        "delete": "Successfully deleted Configuration"
+                    }
+                },
+                "selectedLabel": "Selected"
+            },
+            "modalAuthInfo": {
+                "title": "Authentication",
+                "tabs": {
+                    "tokenEndpoint": "token endpoint",
+                    "refreshTokenEndpoint": "refresh token endpoint",
+                    "invalidateTokenEndpoint": "invalidate token endpoint"
+                },
+                "endpoints": {
+                    "tokenEndpoint": {
+                        "method": "POST",
+                        "uri": "/api/oauth/token"
+                    },
+                    "refreshTokenEndpoint": {
+                        "method": "POST",
+                        "uri": "/api/oauth/token"
+                    },
+                    "invalidateTokenEndpoint": {
+                        "method": "DELETE",
+                        "uri": "/api/oauth/token/invalidate"
+                    }
+                },
+                "body": {
+                    "headers": {
+                        "title": "headers",
+                        "tableHead": {
+                            "key": "key",
+                            "value": "value",
+                            "description": "description"
+                        },
+                        "tableBody": {
+                            "authorization": {
+                                "key": "Authorization",
+                                "value": "Basic <client_id:client_secret>",
+                                "description": "The client id and client secret must be encoded in base64."
+                            }
+                        }
+                    },
+                    "parameters": {
+                        "title": "parameters",
+                        "tableHead": {
+                            "key": "key",
+                            "value": "value",
+                            "description": "description"
+                        },
+                        "tableBody": {
+                            "grantTypePassword": {
+                                "key": "grant_type",
+                                "value": "password",
+                                "description": "OAuth2 password grant type is used."
+                            },
+                            "grantTypeRefreshToken": {
+                                "key": "grant_type",
+                                "value": "refresh_token",
+                                "description": "OAuth2 refresh token grant type is used."
+                            },
+                            "scope": {
+                                "key": "scope",
+                                "value": "<scope>",
+                                "description": "Must be followed precisely the same as the request path, with the exception that “/“ must be replaced with “_“.\nEg:\n\n“user/login” -> “user_login”\n“user/**” -> “user_**”"
+                            },
+                            "username": {
+                                "key": "username",
+                                "value": "<username>",
+                                "description": "Username."
+                            },
+                            "password": {
+                                "key": "password",
+                                "value": "<password>",
+                                "description": "Password."
+                            },
+                            "refreshToken": {
+                                "key": "refresh_token",
+                                "value": "<refresh_token>",
+                                "description": "Refresh token."
+                            }
+                        }
+                    }
+                }
+            },
+            "action": {
+                "header": {
+                    "type": "Type",
+                    "value": "Value",
+                    "button": {
+                        "add": "Add"
+                    }
+                },
+                "parameters": {
+                    "menu": {
+                        "tabs": {
+                            "query": "query",
+                            "body": "body"
+                        }
+                    },
+                    "label": {
+                        "type": "Type"
+                    },
+                    "table": {
+                        "column": {
+                            "parameter": "Parameter",
+                            "description": "Description",
+                            "type": "Type",
+                            "required": "Required"
+                        }
+                    },
+                    "json": {
+                        "typeOptions": {
+                            "string": "String",
+                            "number": "Number",
+                            "boolean": "Boolean",
+                            "list": "List"
+                        }
+                    }
+                },
+                "result": {
+                    "format": {
+                        "title": "Format",
+                        "options": {
+                            "json": "json",
+                            "text": "text"
+                        }
+                    },
+                    "header": {
+                        "key": "Key",
+                        "description": "Description",
+                        "type": "Type"
+                    },
+                    "json": {
+                        "typeOptions": {
+                            "string": "String",
+                            "number": "Number",
+                            "boolean": "Boolean",
+                            "list": "List"
+                        }
+                    },
+                    "input": {
+                        "text": "text"
+                    },
+                    "button": {
+                        "add": "Add"
+                    }
+                }
+            },
+            "test": {
+                "button": {
+                    "run": "Run",
+                    "add": "Add"
+                },
+                "run": {
+                    "error": "Something went wrong on running test"
+                },
+                "label": {
+                    "code": "code",
+                    "name": "name"
+                },
+                "tabs": {
+                    "main": {
+                        "query": "Query",
+                        "body": "Body"
+                    },
+                    "secondary": {
+                        "result": "Result",
+                        "log": "Log"
+                    }
+                }
+            }
+        }
+    },
+    "service": {
+        "modal": {
+            "form": {
+                "error": {
+                    "required": {
+                        "name": "Name is required"
+                    },
+                    "nameExist": "The service component name {{name}} is already existing."
+                }
+            },
+            "delete": {
+                "title": "Delete Confirmation",
+                "message": {
+                    "success": {
+                        "action": "Successfully deleted a service"
+                    },
+                    "confirm": "Are you sure you want to delete {{name}}"
+                }
+            },
+            "copy": {
+                "title": "Duplicate Confirmation",
+                "message": {
+                    "success": {
+                        "action": "Successfully duplicating a service"
+                    },
+                    "confirm": "Are you sure you want to duplicate {{name}}"
+                }
+            }
+        }
+    },
+    "database": {
+        "options": {
+            "engine": {
+                "InnoDB": "InnoDB"
+            },
+            "encoding": {
+                "utf8": "UTF-8 Unicode (utf8)"
+            }
+        },
+        "dashboard": {
+            "header": {
+                "title": "Database"
+            },
+            "menu": {
+                "tabs": {
+                    "primary": {
+                        "structure": "structure",
+                        "relations": "relations",
+                        "content": "content"
+                    },
+                    "button": {
+                        "add": "Add"
+                    }
+                }
+            },
+            "modal": {
+                "create": {
+                    "title": {
+                        "database": "Create Database",
+                        "table": "Create Table"
+                    },
+                    "form": {
+                        "label": {
+                            "name": "Name",
+                            "engine": "Type Engine",
+                            "encoding": "Encoding"
+                        },
+                        "error": {
+                            "required": {
+                                "name": "Name is required"
+                            },
+                            "nameExist": "Name already exist",
+                            "nameSpace": "Empty spaces are not allowed"
+                        },
+                        "message": {
+                            "success": {
+                                "database": "Successfully added a database",
+                                "table": "Successfully added a table"
+                            }
+                        }
+                    }
+                },
+                "delete": {
+                    "title": {
+                        "database": "Delete Database",
+                        "table": "Delete Table"
+                    },
+                    "form": {
+                        "message": {
+                            "success": {
+                                "database": "Successfully deleted a database",
+                                "table": "Successfully deleted a table"
+                            },
+                            "confirm": {
+                                "database": "Deleting database {{name}} will also delete all of its table(s). Are you sure you want to proceed?",
+                                "table": "Are you sure you want to delete table {{name}}?"
+                            }
+                        }
+                    }
+                },
+                "rename": {
+                    "title": {
+                        "database": "Rename Database",
+                        "table": "Rename Table"
+                    },
+                    "form": {
+                        "label": {
+                            "name": "Name"
+                        },
+                        "error": {
+                            "required": {
+                                "name": "Name is required"
+                            },
+                            "nameExist": "Name already exist",
+                            "nameSpace": "Empty spaces are not allowed"
+                        },
+                        "message": {
+                            "success": {
+                                "table": "Successfully changed a table name",
+                                "database": "Successfully changed a database name"
+                            }
+                        }
+                    }
+                },
+                "configuration": {
+                    "title": "Configuration",
+                    "form": {
+                        "label": {
+                            "engine": "Type Engine",
+                            "encoding": "Encoding",
+                            "host": "Host",
+                            "port": "Port",
+                            "username": "Username",
+                            "password": "Password"
+                        },
+                        "message": {
+                            "success": "Successfully modified a database configuration",
+                            "error": {
+                                "portNotANumber": "Port must be a number"
+                            }
+                        }
+                    }
+                }
+            },
+            "action": {
+                "structure": {
+                    "header": {
+                        "primary": "Primary",
+                        "name": "Name",
+                        "type": "Type",
+                        "length": "Length",
+                        "optional": "Optional",
+                        "default": "Default"
+                    },
+                    "error": {
+                        "length": {
+                            "required": "Length is required",
+                            "invalid": "Invalid value",
+                            "outOfRange": "Out of range"
+                        }
+                    }
+                },
+                "relations": {
+                    "header": {
+                        "name": "Name",
+                        "field": "Field",
+                        "foreigntable": "Foreign Table",
+                        "foreignfield": "Foreign Field"
+                    },
+                    "error": {
+                        "nameExist": "Name already exists",
+                        "nameSpace": "Empty spaces are not allowed",
+                        "relationExist": "Table relation already exists",
+                        "foreignField": {
+                            "notPrimaryKey": "Foreign field is not a primary key"
+                        }
+                    }
+                },
+                "content": {
+                    "button": {
+                        "add": "Add"
+                    },
+                    "error": {
+                        "updatingRecordField": "Error while updating content data",
+                        "maximumFieldLength": "This field has a maximum length of",
+                        "noNullField": "This field cannot be empty or null",
+                        "addingRecordField": "Error while adding new content data",
+                        "deletingRecordField": "Error while deleting content data",
+                        "gettingRecordField": "Error while getting content data"
+                    },
+                    "structureChanged": "Database table structure have been modified, please save your project so the fields are updated here.",
+                    "structureNotSaved": "Please save the project first to see the fields here, and so can insert records.",
+                    "structureNotExist": "Please add the content structure first."
+                }
+            }
+        }
+    },
+    "scheduler": {
+        "dashboard": {
+            "header": {
+                "title": "Scheduler",
+                "dropdown": {
+                    "select": "Select",
+                    "edit": "Edit",
+                    "clear": "Clear"
+                }
+            },
+            "label": {
+                "settings": "Settings",
+                "enabled": "Enabled",
+                "disabled": "Disabled",
+                "configuration": "Configuration"
+            },
+            "dropdown": {
+                "select": "Select",
+                "edit": "Edit"
+            },
+            "modalConfig": {
+                "title": "Configuration",
+                "form": {
+                    "input": {
+                        "search": "Search",
+                        "name": "Name"
+                    },
+                    "placeholder": {
+                        "name": "Name",
+                        "search": "Search",
+                        "new": "New Configuration"
+                    },
+                    "button": {
+                        "create": "Create",
+                        "delete": "Delete",
+                        "update": "Update",
+                        "select": "Select",
+                        "cancel": "Cancel",
+                        "yes": "Yes",
+                        "no": "No"
+                    },
+                    "select": {
+                        "options": {
+                            "select": "Select",
+                            "am": "am",
+                            "pm": "pm",
+                            "first": "First",
+                            "second": "Second",
+                            "third": "Third",
+                            "fourth": "Fourth",
+                            "jan": "Jan",
+                            "feb": "Feb",
+                            "mar": "Mar",
+                            "apr": "Apr",
+                            "may": "May",
+                            "jun": "Jun",
+                            "jul": "Jul",
+                            "aug": "Aug",
+                            "sep": "Sep",
+                            "oct": "Oct",
+                            "nov": "Nov",
+                            "dec": "Dec"
+                        }
+                    },
+                    "error": {
+                        "required": {
+                            "field": "Type field is Required.",
+                            "name": "Name field is Required."
+                        },
+                        "nameExist": "Name already exists"
+                    },
+                    "success": {
+                        "update": "Successfully updated Configuration",
+                        "delete": "Successfully deleted Configuration"
+                    },
+                    "label": {
+                        "day": "Day",
+                        "of": "of",
+                        "every": "Every",
+                        "ofevery": "of every",
+                        "everyday": "Everyday",
+                        "everyweekday": "Every weekday",
+                        "everyweekend": "Every weekend",
+                        "startsat": "Starts at",
+                        "hours": "hours",
+                        "months": "month(s)",
+                        "the": "The",
+                        "mon": "Mon",
+                        "tue": "Tue",
+                        "wed": "Wed",
+                        "thu": "Thu",
+                        "fri": "Fri",
+                        "sat": "Sat",
+                        "sun": "Sun"
+                    }
+                },
+                "tabs": {
+                    "primary": {
+                        "schedule": "schedule"
+                    },
+                    "secondary": {
+                        "hourly": "hourly",
+                        "daily": "daily",
+                        "weekly": "weekly",
+                        "monthly": "monthly",
+                        "yearly": "yearly"
+                    }
+                },
+                "selectedLabel": "Selected",
+                "confirm": {
+                    "delete": "Are you sure you want to delete this Configuration?",
+                    "used": "This configuration is currently used by {{type}}. Are you sure you want to proceed?"
+                }
+            },
+            "menu": {
+                "tabs": {
+                    "primary": {
+                        "main": "main",
+                        "result": "result",
+                        "log": "log",
+                        "action": "action",
+                        "global": "global"
+                    },
+                    "secondary": {
+                        "action": "action",
+                        "test": "test"
+                    },
+                    "button": {
+                        "run": "Run"
+                    }
+                }
+            },
+            "test": {
+                "alert": {
+                    "noLogFound": "No logs found"
+                },
+                "run": {
+                    "error": "Something went wrong on running test"
+                }
+            },
+            "modal": {
+                "create": {
+                    "title": "Create Folder/Action",
+                    "form": {
+                        "label": {
+                            "type": "Type",
+                            "name": "Name"
+                        },
+                        "select": {
+                            "options": {
+                                "folder": "Folder",
+                                "action": "Action"
+                            }
+                        },
+                        "error": {
+                            "required": {
+                                "name": "Name is required"
+                            },
+                            "nameExist": "Name already exist in same directory",
+                            "nameSpace": "Empty spaces are not allowed"
+                        },
+                        "message": {
+                            "success": {
+                                "action": "Successfully added a scheduler",
+                                "folder": "Successfully added a folder"
+                            }
+                        }
+                    }
+                },
+                "rename": {
+                    "title": "Rename {{type}}",
+                    "form": {
+                        "label": {
+                            "name": "Name"
+                        },
+                        "error": {
+                            "required": {
+                                "name": "Name is required"
+                            },
+                            "nameExist": "Name already exist in same directory",
+                            "nameSpace": "Empty spaces are not allowed"
+                        },
+                        "message": {
+                            "success": {
+                                "action": "Successfully renamed an scheduler",
+                                "folder": "Successfully renamed a folder"
+                            }
+                        }
+                    }
+                },
+                "delete": {
+                    "title": "Delete {{type}}",
+                    "form": {
+                        "message": {
+                            "success": {
+                                "action": "Successfully deleted a Scheduler",
+                                "folder": "Successfully deleted a folder"
+                            },
+                            "confirm": "Are you sure you want to delete {{name}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "eventFlow": {
+        "loader": {
+            "title": "Loading..."
+        },
+        "modal": {
+            "delete": {
+                "title": "Delete",
+                "form": {
+                    "message": {
+                        "confirm": "Are you sure you want to delete {{name}}"
+                    }
+                }
+            },
+            "function": {
+                "title": "Function"
+            },
+            "paste": {
+                "title": "Paste Function"
+            }
+        },
+        "tabs": {
+            "action": {
+                "title": "Action",
+                "modal": {
+                    "functions": {
+                        "title": "Functions"
+                    },
+                    "function": {
+                        "title": "Function",
+                        "message": "Are you sure?"
+                    },
+                    "objectEditor": {
+                        "title": "Object Editor"
+                    },
+                    "addDynamicParam": {
+                        "title": "Add Parameter",
+                        "form": {
+                            "label": {
+                                "name": "Name"
+                            },
+                            "error": {
+                                "required": {
+                                    "name": "Param name cannot be empty."
+                                },
+                                "existing": {
+                                    "name": "Param name already existing."
+                                }
+                            }
+                        }
+                    }
+                },
+                "functionList": {
+                    "empty": "No functions in this category",
+                    "notFound": "No functions were found for keyword \"{{keyword}}\""
+                }
+            },
+            "global": {
+                "title": "Global",
+                "noGlobalFunctions": "no global functions",
+                "add": {
+                    "form": {
+                        "name": "Name",
+                        "result": "Result",
+                        "error": {
+                            "existing": {
+                                "name": "Function name already existing."
+                            }
+                        }
+                    },
+                    "modal": {
+                        "title": "Add Global Function"
+                    }
+                },
+                "delete": {
+                    "form": {
+                        "error": {
+                            "select": {
+                                "function": "Please select a global function first."
+                            }
+                        },
+                        "success": {
+                            "function": "Global function {{name}} successfully deleted."
+                        }
+                    }
+                }
+            }
+        },
+        "inspector": {
+            "header": {
+                "title": "Inspector",
+                "parameters": "Parameters"
+            },
+            "form": {
+                "label": {
+                    "name": "Name",
+                    "result": "Result"
+                }
+            },
+            "message": {
+                "noParameters": "no parameters"
+            },
+            "button": {
+                "addNewParameter": "add new parameter",
+                "addGlobal": "add new"
+            }
+        },
+        "action": {
+            "title": "Main"
+        }
+    },
+    "configuration": {
+        "main": {
+            "title": "Configuration",
+            "tab": {
+                "application": "Application",
+                "authentication": "Authentication",
+                "ssl": "SSL"
+            }
+        },
+        "application": {
+            "header": "Application Settings",
+            "form": {
+                "label": {
+                    "groupId": "Group",
+                    "artifactId": "Artifact",
+                    "packageName": "Package Name",
+                    "smtpTimeout": "SMTP Timeout",
+                    "fileStoragePath": "File Storage Path",
+                    "thread": "Thread",
+                    "asyncPoolSize": "Async Pool Size",
+                    "asyncMaxSize": "Async Max Size",
+                    "asyncQueueCapacity": "Async Queue Capacity",
+                    "schedulePoolSize": "Schedule Pool Size"
+                }
+            }
+        },
+        "authentication": {
+            "header": "Authentication Settings",
+            "form": {
+                "label": {
+                    "clientId": "Client ID",
+                    "clientSecret": "Client Secret",
+                    "accessTokenValidity": "Access Token Validity - Seconds",
+                    "refreshTokenValidity": "Refresh Token Validity - Seconds"
+                }
+            }
+        },
+        "ssl": {
+            "header": "SSL Settings",
+            "form": {
+                "label": {
+                    "sslEnabled": "Enabled",
+                    "keyAlias": "Key Alias",
+                    "keyPassword": "Key Password",
+                    "keyStore": "Key Store",
+                    "keyStoreType": "Key Store Type",
+                    "keyStorePassword": "Key Store Password"
+                }
+            }
+        }
+    }
+}

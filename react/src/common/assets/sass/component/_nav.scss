@@ -1,0 +1,55 @@
+#navbar{
+    .nav {
+        background-color: $light-gray;
+        width: 100%;
+    }
+
+    .nav-link {
+        color: $philippine-gray;
+        font-size: $font-size;
+        padding: 0 42px;
+        line-height: 30px;
+
+        &.active,
+        &:hover {
+            background-color: $white;
+        }
+    }
+}
+
+.overflow-nav-tabs{
+    @media screen and (max-width: map-get($container-max-widths, "lg")) {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        /* Hide vertical scrollbar */
+        overflow-y: hidden;
+    }
+}
+
+// Nav tabs
+.tab-menu {
+    .nav-tabs {
+        background-color: $bright-gray;
+    }
+
+    &.dark {
+        color: $white;
+        background-color: $carbon-grey;
+
+        .nav-tabs {
+            background-color: $quartz;
+            border-radius: 5px 5px 0 0;
+
+            .nav-link {
+                color: $white;
+                margin: 4px 0 0 4px;
+                border: 0;
+
+                &.active {
+                    background-color: $carbon-grey;
+                }
+            }
+        }
+    }
+}

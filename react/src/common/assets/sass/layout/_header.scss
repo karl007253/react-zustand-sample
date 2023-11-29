@@ -1,0 +1,25 @@
+#header {
+    background-color: $emobiq-brand;
+    color: $white;
+    font-size: $font-size;
+
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    .download-button {
+        position: absolute;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        top: 0;
+        right: 70px;
+    }
+
+    .build-status {
+        position: absolute;
+        top: 47px;
+        right: 12px;
+        .alert {
+            padding: 1px;
+        }
+    }
+}

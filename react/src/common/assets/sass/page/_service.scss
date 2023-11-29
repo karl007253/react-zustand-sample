@@ -1,0 +1,178 @@
+.service-container {
+    height: calc(100vh - 88px);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .service-left-panel-container {
+        z-index: 22;
+        width: 200px;
+        min-width: 200px;
+        border: 0.5px $chinese-silver solid;
+        border-radius: 3px;
+        height: 100%;
+        overflow-y: scroll;
+
+        .service-left-list {
+            list-style: none;
+            padding: 10px;
+            height: 100%;
+
+            .service-component {
+                cursor: move;
+                padding: 10px 10px 10px 30px;
+                border-bottom: 0.5px dotted;
+                font-size: 12px;
+                color: $granite-gray;
+                background-image: url("../../images/service.png");
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-position: 3px 10px;
+                display: block;
+            }
+        }
+    }
+
+    .service-right-panel-container {
+        padding: 10px 0px;
+        margin-left: 10px;
+        display: flex;
+        flex-grow: 1;
+        border: 0.5px $chinese-silver solid;
+        overflow: auto;
+        border-radius: 3px;
+        background-color: $cultured;
+
+        // hiding scrollbar
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .service-right-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5em 0.75em;
+            width: 100%;
+
+            .service-right-header-text {
+                color: $oslo-gray;
+            }
+
+            .service-right-header-icon {
+                cursor: pointer;
+                position: sticky;
+                right: 25px;
+            }
+        }
+
+        .service-sortable-container {
+            width: 100%;
+            display: flex;
+            flex: 1;
+
+            .service-sortable-grid {
+                padding: 0em 0.25em;
+
+                > div {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .service-card-container {
+                    position: relative;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    width: 100%;
+                    overflow: auto;
+
+                    .service-pointer-cursor {
+                        cursor: pointer !important;
+                    }
+
+                    .service-card-head-tab {
+                        background-color: $emobiq-brand-light;
+                        border: 0.5px solid $chinese-silver;
+                        border-top-left-radius: 3px;
+                        border-top-right-radius: 3px;
+                        height: 35px;
+                        width: 100%;
+                        padding: 0px 10px;
+                        cursor: default;
+                        transition: 0.3s ease;
+
+                        &:hover {
+                            background-color: $misty-rose;
+                        }
+
+                        .service-card-tab-title {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $oslo-gray;
+                            width: 80%;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            cursor: inherit;
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+
+                        .service-card-tab-icon {
+                            line-height: 26px;
+                            width: 20%;
+                            display: flex;
+                            justify-content: flex-end;
+
+                            .service-card-icon {
+                                color: $oslo-gray;
+                                margin-left: 5px;
+                                cursor: pointer;
+                            }
+                            .service-card-icon :hover {
+                                color: $spanish-gray;
+                            }
+                        }
+                    }
+
+                    .service-card-form-container {
+                        width: 100%;
+                        background-color: $white;
+                        border: 0.5px solid $light-gray;
+                        border-bottom-left-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                        padding: 10px 0px 10px;
+
+                        .service-card-field-container {
+                            padding: 3px 10px;
+
+                            label {
+                                font-size: 12px;
+                                color: $granite-gray;
+                            }
+
+                            input,
+                            select {
+                                color: $oslo-gray;
+                                height: 30px;
+                                font-size: 12px;
+                                line-height: 12px;
+                            }
+
+                            button {
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

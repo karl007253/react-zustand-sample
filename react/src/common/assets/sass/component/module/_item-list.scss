@@ -1,0 +1,82 @@
+/* Item list Tree Component */
+
+.rc-tree-child-tree {
+    display: block;
+}
+
+.node-motion {
+    transition: all 0.3s;
+    overflow-y: hidden;
+}
+
+span.rc-tree-switcher {
+    margin-right: 5px !important;
+}
+
+.rc-tree-iconEle {
+    margin-right: 5px !important;
+    line-height: 20px !important;
+}
+
+.rc-tree-title {
+    font-size: 14px !important;
+}
+
+.rc-tree-node-selected {
+    background-color: $cultured;
+    box-shadow: none;
+}
+
+.rc-tree-treenode-selected {
+    background-color: $cultured;
+    box-shadow: none;
+}
+
+.rc-tree-treenode {
+    padding: 2px 5px !important;
+}
+
+// class name for api tree icons
+.api-tree-container {
+    @include rctree-icon-changer(
+        $width-open: 15px,
+        $height-open: 15px,
+        $background-image-open: url(../../../images/rctree/folder-open.svg),
+        $width-close: 15px,
+        $height-close: 15px,
+        $background-image-close: url(../../../images/rctree/folder-closed.svg),
+        $width-document: 12px,
+        $height-document: 16px,
+        $background-image-document: url(../../../images/rctree/file.svg)
+    );
+}
+
+// class name for database tree icons
+.database-tree-container {
+    @include rctree-icon-changer(
+        $width-open: 14px,
+        $height-open: 14px,
+        $background-image-open: url(../../../images/rctree/database-main.svg),
+        $width-close: 14px,
+        $height-close: 14px,
+        $background-image-close: url(../../../images/rctree/database-main.svg),
+        $width-document: 16px,
+        $height-document: 16px,
+        $background-image-document: url(../../../images/rctree/database-file.svg)
+    );
+}
+
+// class name for scheduler tree icons
+.scheduler-tree-container {
+    @include rctree-icon-changer(
+        $width-open: 14px,
+        $height-open: 14px,
+        $background-image-open: url(../../../images/rctree/sched-main.svg),
+        $width-close: 14px,
+        $height-close: 14px,
+        $background-image-close: url(../../../images/rctree/sched-main.svg),
+        $width-document: 12px,
+        $height-document: 16px,
+        $background-image-document: url(../../../images/rctree/sched-file.svg)
+    );
+}
